@@ -1,0 +1,37 @@
+db.Profesor.insert({
+	"datos":{
+		"Cedula": 23501050433,
+		"Nombre": "Angel",
+		"Apellido": "Alcivar",
+	},	
+         "contacto":{
+		"Correo": "aa@gmail.com",
+		"Telefono": 0981240315,
+         },
+	"Direccion":"Av. Quito",
+	"Funcion": "Tutor"
+});
+
+db.Alumno.insert({
+	"datos":{
+		"Cedula": 23501050431,
+		"Nombre": "Luis",
+		"Apellido": "Paredez",
+	},
+	"contacto":{
+		"Correo": "la@gmail.com",
+		"Telefono": 0981240314,
+	},
+	
+	"Direccion":"Av. Quevedo",
+	"Nota": 9,
+	"id_pro":ObjectId("62d0bf44659db6f269dd1785")
+}
+);
+
+db.Horario.insert({
+	"Hora_entrada": "07:00",
+	"Hora_final": "09:00",
+	"id_pro":ObjectId("62d0bf44659db6f269dd1785")	
+});
+
