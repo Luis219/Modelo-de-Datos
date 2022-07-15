@@ -1,13 +1,3 @@
-Admin
-{
-	_id: string,
-	Cedula: int
-	Nombre: string,
-	Apellido: string,
-	Correo: string
-	Teléfono: int,
-	Dirección: string,	
-}
 
 Profesores
 {
@@ -24,13 +14,22 @@ Profesores
 Alumno
 {
 	_id: string,
-	Cedula: int
+	Cedula: int,
 	Nombre: string,
 	Apellido: string,
 	Correo: string
 	Teléfono: int,
 	Dirección: string,
-	Nota: int
+	Nota: int,
+	id_pro: string
 	
+}
+
+Horario
+{
+	 _id=string,
+	Hora_entrada: string,
+	Hora_final: string,
+	id_pro:string
 }
 
