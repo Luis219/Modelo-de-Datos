@@ -1,28 +1,34 @@
-
-Profesores
+Profesor
 {
 	_id: string,
-	Cedula: int
-	Nombre: string,
-	Apellido: string,
-	Correo: string
-	Teléfono: int,
-	Dirección: string,
-	Función: string
+	datos:{
+        	Cedula: int,
+        	Nombre: string,
+        	Apellido: string,
+	},
+	contacto:{
+		    Correo: string
+        	Telefono: int,
+	},
+	Direccion: string,
+	Funcion: string
 	
 }
-Alumno
+Alumno 
 {
 	_id: string,
-	Cedula: int,
-	Nombre: string,
-	Apellido: string,
-	Correo: string
-	Teléfono: int,
-	Dirección: string,
+	datos:{
+        	Cedula: int,
+        	Nombre: string,
+        	Apellido: string,
+	},
+	contacto:{
+    	Correo: string,
+    	Telefono: int,
+	},
+	Direccion: string,
 	Nota: int,
 	id_pro: string
-	
 }
 
 Horario
